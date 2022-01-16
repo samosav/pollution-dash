@@ -10,10 +10,6 @@ print(df)
 app = dash.Dash(__name__)
 fig = go.Figure()
 fig.add_scatter(x=df[0].to_list(), y=df[1].to_list())
-fig.show()
-fig.write_html('html_plot.html',
-               config={'toImageButtonOptions':
-                       {'format': 'svg'}})
 
 app.layout = html.Div([
 
